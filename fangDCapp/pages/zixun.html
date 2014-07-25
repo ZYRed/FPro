@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>房产资讯</title>
+    <link rel="stylesheet" href="../css/zixun.css">
+</head>
+<body>
+<header>
+    <a href="pinggu.html">
+        <img src="../images/2sf_1.png" width="50%" style="padding: 15px  0  0 10px;">
+        <span class="like_btn"></span>
+    </a>
+    <a href="#">房产资讯<p id="city">当前所在城市：北京</p></a>
+    <a href="javascript:void (0);"></a>
+</header>
+<nav>
+    <ul class="list">
+        <li>导购</li>
+        <li>打折</li>
+        <li>点评</li>
+        <li>市场</li>
+        <li>政策</li>
+    </ul>
+</nav>
+
+<section>
+    <input type="text" class="search" placeholder="输入城市名称"/>
+</section>
+
+
+<div id="wrapper">
+    <div id="scroller">
+        <ul id="thelist">
+            <li>
+                <h1>北京频现日光盘 京城楼市再现一方难求</h1>
+                <span>2013-10-18 7；53</span>
+            </li>
+            <li>
+                <h1>市场持续回温 北上广深年内卖地收入增幅超过200%</h1>
+                <span>2013-10-18 7；54</span>
+            </li>
+            <li>
+                <h1>富裕人群海外购房成普遍现象 多重因素成购房动因</h1>
+                <span>2013-10-18 7；40</span>
+            </li>
+            <li>
+                <h1>一线城市卖地同比翻番 北上广深土地供应增加明显</h1>
+                <span>2013-10-18 7；59</span>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+
+<script src="../js/zepto.min.js"></script>
+<script src="../js/iscroll.js"></script>
+<script type="text/javascript">
+    window.onload = function () {
+        new iScroll('wrapper', {
+            onBeforeScrollStart: function () {
+            },
+            fadeScrollbar: true,
+            hideScrollbar: true
+        });
+
+
+    }
+</script>
+<script type="text/javascript">
+    var city = document.getElementById("city");
+        city.onclick = function(){
+            window.location.href="choosecity.html";
+        }
+
+</script>
+</body>
+</html>

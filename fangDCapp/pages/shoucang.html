@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>我的收藏记录</title>
+    <link rel="stylesheet" href="../css/shoucang.css">
+</head>
+<body>
+<header>
+    <a href="javascript:void (0);" onClick="javascript :history.back(-1);">
+        <img src="../images/2sf_1.png" width="50%" style="padding: 15px  0  0 10px;">
+        <span class="like_btn"></span>
+    </a>
+    <a href="javascript:void (0);">我的收藏记录</a>
+    <a href="javascript:void (0);"></a>
+</header>
+<nav>
+    <ul class="list">
+        <li><a href="../pages/search-xin.html">新盘</a></li>
+        <li  class="active"><a href="javascript:void(0);" style="color: #31cec8;">二手房资源</a></li>
+        <li><a href="../pages/search-zu.html">租房房源</a></li>
+    </ul>
+</nav>
+
+<article>
+    您还没有收藏房源，请先收藏房源再进行查看
+</article>
+
+<script src="../js/zepto.min.js"></script>
+<script src="../js/iscroll.js"></script>
+<script type="text/javascript">
+    window.onload = function () {
+        new iScroll('wrapper', {
+            onBeforeScrollStart: function () {
+            },
+            fadeScrollbar: true,
+            hideScrollbar: true
+        });
+
+
+    }
+</script>
+</body>
+</html>
+

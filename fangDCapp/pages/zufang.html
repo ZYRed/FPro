@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>租房</title>
+    <link rel="stylesheet" href="../css/zufang.css">
+</head>
+<body>
+<header>
+    <a href="javascript:void (0);" onClick="javascript :history.back(-1);">
+        <img src="../images/2sf_1.png" width="50%" style="padding: 15px  0  0 10px;">
+        <span class="like_btn"></span>
+    </a>
+    <a href="javascript:void (0);">　　租房</a>
+    <a href="javascript:void (0);"><p><img src="../images/2sf_2.png" id="grzx"></p><p id="search"><img src="../images/2sf_3.png"></p></a>
+</header>
+<nav>
+    <ul class="list">
+        <li>区域</li>
+        <li>价格</li>
+        <li>方式</li>
+        <li>来源</li>
+        <li>排序</li>
+    </ul>
+</nav>
+
+<div id="wrapper">
+    <div id="scroller">
+        <ul id="thelist">
+            <li>
+                <img src="../images/zufang_03.png">
+                <h1>【麦田认证房】蓝宝居家一居室首次出租 业主只要爱房人</h1>
+                <h2>整租1室1厅1卫华雁北里8号院</h2>
+                <h3>6800元/月</h3>
+                <span></span>
+            </li>
+            <li>
+                <img src="../images/zufang_11.png">
+                <h1>【链家100%真房源】领袖新硅谷底层房子出租，随时看房看房…</h1>
+                <h2>整租 2室1厅 铭科苑</h2>
+                <h3>5400元/月</h3>
+                <span></span>
+            </li>
+            <li>
+                <img src="../images/zufang_14.png">
+                <h1>【麦田认证房】西向1居。户型方正，婚房装修，澳洲嫝度</h1>
+                <h2>整租 1室1厅 澳洲嫝度</h2>
+                <h3>5000元/月</h3>
+                <span></span>
+            </li>
+            <li>
+                <img src="../images/zufang_17.png">
+                <h1>朗琴园三居急租观景房 全新装修 拎包入住 紧邻二环 交通便</h1>
+                <h2>整租 3室2厅1卫 朗琴园</h2>
+                <h3>8800元/月</h3>
+                <span></span>
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+<script src="../js/zepto.min.js"></script>
+<script src="../js/iscroll.js"></script>
+<script type="text/javascript">
+    window.onload = function () {
+        new iScroll('wrapper', {
+            onBeforeScrollStart: function () {
+            },
+            fadeScrollbar: true,
+            hideScrollbar: true
+        });
+
+    }
+</script>
+<script type="text/javascript">
+    var search = document.getElementById("search");
+        search.onclick = function(){
+            window.location.href="search-xin.html";
+        }
+
+</script>
+<script type="text/javascript">
+    var grzx = document.getElementById("grzx");
+        grzx.onclick = function(){
+            window.location.href="grzx.html";
+        }
+
+</script>
+</body>
+</html>

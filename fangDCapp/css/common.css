@@ -1,0 +1,121 @@
+/*公共样式*/
+body,div,h1,p,h2,header,ul,li,dl,dt,dd,ol,nav,input,footer{ margin:0; padding:0;}
+body{ color:#000;font-family:Arial, Helvetica, sans-serif;background-color: #f8f8f8;}
+body,html{ height:100%;-webkit-touch-callout: none;-webkit-user-select:none;}
+
+/*头部样式*/
+header {
+    position:absolute;
+    z-index:3;
+    top:0;
+    left:0;
+    width:100%;
+    height:2.6em;
+    line-height:2.8em;
+    background:#ed9249;
+    padding:0 1em;
+    color:#eee;
+    font-size:1.2em;
+    text-align:center;
+    display: -webkit-box;
+    -webkit-box-sizing: border-box;
+    -webkit-box-pack: justify;
+
+}
+
+header a {
+    display: -webkit-box;
+    color:#f3f3f3;
+    text-decoration:none;
+    font-weight:bold;
+
+}
+
+header a:first-child {
+    width: 2em;
+    height: 1em;
+}
+
+header a:first-child img {
+    width:1em ;
+    padding-left:0.5em;
+}
+
+.like_btn{
+    display: block;
+    width: 1px;
+    height: 2.5em;
+    background: -webkit-linear-gradient(top, #eb8f45, #e38334);
+    margin-left: 1.5em;
+}
+
+header a:last-child {
+    width: 4.65em;
+    height: 2.5em;
+    line-height: 2.5em;
+    display: -webkit-box;
+    -webkit-box-orient:horizontal;
+    display: -moz-box;
+    -moz-box-orient:horizontal;
+    overflow: hidden;
+
+}
+
+header a:last-child p{
+    width: 1.05em;
+    height: 1.3em;
+    margin-top: 0.2em;
+    padding: 0.6em 0.8em 0.3em 0.8em;
+    border-left:1px solid #e38334 ;
+}
+
+header a:last-child img{
+    width: 1em;
+    display: block;
+}
+/*头部结束*/
+
+/*导航开始*/
+nav{
+    position:absolute;
+    z-index:2;
+    top:40px;
+    left:0;
+    width:100%;
+    height:2.5em;
+    line-height:2.5em;
+    font-size: 0.9em;
+}
+nav .list{
+    list-style: none;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    width: 100%;
+    overflow: hidden;
+    color: #ed9249;
+    border-bottom: 1px solid #d5d5d5;
+    height: 3.7em;
+}
+
+nav .list li{
+    text-align: center;
+    line-height: 2.15em;
+    width:4.5em;
+    margin-top: 0.9em;
+    border-right: 1px solid #d5d5d5;
+}
+
+nav .list li:last-child{
+    border-right:none;
+}
+/*导航结束*/
+
+/*滚动开始*/
+#wrapper {
+    position:absolute; z-index:1;
+    width:100%;
+    overflow:auto;
+}
+/*滚动结束*/
+

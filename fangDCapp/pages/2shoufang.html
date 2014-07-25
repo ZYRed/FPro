@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>二手房</title>
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/2SF.css">
+</head>
+<body>
+<header>
+    <a href="javascript:void(0);" onClick="javascript :history.back(-1);">
+        <img src="../images/2sf_1.png">
+        <span class="like_btn"></span>
+    </a>
+    <a href="javascript:void(0);">　　二手房</a>
+    <a href="javascript:void (0);"><p><img src="../images/2sf_2.png" id="grzx"></p><p id="search"><img src="../images/2sf_3.png"></p></a>
+
+</header>
+<nav>
+    <ul class="list">
+        <li>区域</li>
+        <li>价格</li>
+        <li>方式</li>
+        <li>来源</li>
+        <li>排序</li>
+    </ul>
+</nav>
+
+<div id="wrapper">
+    <div id="scroller">
+        <ul id="thelist">
+            <li>
+                <img src="../images/2SF1_03.png">
+                <h1>维多利亚小区房屋出租</h1>
+                <h2>燕郊区 城美维多利亚 [3图]</h2>
+                <h3>1室1厅 55平米</h3>
+                <span>1400元/月</span>
+            </li>
+            <li>
+                <img src="../images/2SF1_02.png">
+                <h1>自住标准装修潮白人家新房出租</h1>
+                <h2>燕郊区 潮白人家 [6图]</h2>
+                <h3>3室1厅 110平米</h3>
+                <span>2300元/月</span>
+            </li>
+            <li>
+                <img src="../images/2SF1_01.png">
+                <h1>东贸国际精装三居室双包，拎包入住</h1>
+                <h2>燕郊区 易华东贸国际 [8图]</h2>
+                <h3>3室4厅 100平米</h3>
+                <span>2500元/月</span>
+            </li>
+            <li>
+                <img src="../images/2SF1_03.png">
+                <h1>数码大厦地铁口420平，315平方米</h1>
+                <h2>燕郊区 城美维多利亚 [3图]</h2>
+                <h3>0室0厅 420平米</h3>
+                <span>2000元/月</span>
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+<script src="../js/zepto.min.js"></script>
+<script src="../js/iscroll.js"></script>
+<script type="text/javascript">
+    window.onload = function () {
+        new iScroll('wrapper', {
+            onBeforeScrollStart: function () {
+            },
+            fadeScrollbar: true,
+            hideScrollbar: true
+        });
+    }
+    
+</script>
+<script type="text/javascript">
+    var search = document.getElementById("search");
+        search.onclick = function(){
+            window.location.href="search-xin.html";
+        }
+
+</script>
+<script type="text/javascript">
+    var grzx = document.getElementById("grzx");
+        grzx.onclick = function(){
+            window.location.href="grzx.html";
+        }
+
+</script>
+</body>
+</html>

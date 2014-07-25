@@ -1,0 +1,178 @@
+body,ul,li {
+    padding:0;
+    margin:0;
+    border:0;
+}
+
+body {
+    font-size:12px;
+    -webkit-user-select:none;
+    -webkit-text-size-adjust:none;
+    font-family:helvetica;
+    background-color: #f8f8f8;
+}
+
+header {
+    position:absolute;
+    z-index:2;
+    top:0;
+    left:0;
+    width:100%;
+    height:50px;
+    line-height:50px;
+    background:#ed9249;
+    padding:0 5px;
+    color:#eee;
+    font-size:20px;
+    text-align:center;
+    display: -webkit-box;
+    -webkit-box-sizing: border-box;
+    -webkit-box-pack: justify;
+
+}
+
+header a {
+    display: -webkit-box;
+    color:#f3f3f3;
+    text-decoration:none;
+    font-weight:bold;
+
+}
+
+header a:first-child {
+    width: 50px;
+    height: 50px;
+}
+
+.like_btn{
+    display: block;
+    width: 1px;
+    height: 50px;
+    background: -webkit-linear-gradient(top, #eb8f45, #e38334);
+    margin-left: 25px;
+}
+
+header a:last-child {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    display: -webkit-box;
+    -webkit-box-orient:horizontal;
+    display: -moz-box;
+    -moz-box-orient:horizontal;
+    overflow: hidden;
+
+}
+
+header a:last-child p{
+    width: 20px;
+    height: 30px;
+    margin-top: 2px;
+    padding: 13px 15px 7px 15px;
+    border-left:1px solid #e38334 ;
+}
+
+header a:last-child img{
+    width: 99%;
+    display: block;
+}
+
+
+nav{
+    position:absolute;
+    z-index:1;
+    top:40px;
+    left:0;
+    width:100%;
+    height:40px;
+    line-height:50px;
+}
+
+nav img{
+    width: 100%;
+}
+
+
+
+section{
+    width:100%;
+    position: absolute;z-index: 1;
+    top: 220px;
+    z-index: 2;
+    display: -webkit-box;
+
+}
+
+section  p{
+    color: #5a5a5a;
+}
+section p:nth-child(1){
+    width: 60% ;
+    margin-left: 10px;
+}
+
+section p:nth-child(2){
+    width: 32% ;
+    color: #aaaaaa;
+    position: relative;
+    top: 20px;
+    background: url("../images/tuijian_01_05.png") no-repeat;
+    background-size: 6%;
+    padding-left: 15px;
+}
+section p:nth-child(2) span{
+    color: #ed9249;
+}
+
+
+
+#wrapper {
+    position:absolute; z-index:1;
+    bottom:5px;
+    top:270px;
+    left:0;
+    width:100%;
+    overflow:auto;
+}
+
+
+#scroller li {
+    display: -webkit-box;
+    height: 50px;
+    border-top: 1px solid #ccc;
+    position: relative;
+}
+#scroller li:last-child {
+    border-bottom: 1px solid #ccc;
+}
+
+
+#scroller li h1{
+
+    font-weight: normal;
+    font-size: 14px;
+    position: absolute;
+    top:10px;
+    left: 25px;
+    color: #5a5a5a;
+}
+
+#scroller li span{
+
+    display: block;
+    width: 40px;
+    color: #aaaaaa;
+    position: absolute;
+    right: 20px;
+    top:10px;
+    background-image: url("../images/tuijian_01_09.png");
+    background-size: 15%;
+    background-repeat: no-repeat;
+    background-position: 27px;
+}
+
+
+
+
+
+

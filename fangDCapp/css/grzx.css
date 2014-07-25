@@ -1,0 +1,111 @@
+body,ul,li {
+    padding:0;
+    margin:0;
+    border:0;
+}
+
+body {
+    font-size:12px;
+    -webkit-user-select:none;
+    -webkit-text-size-adjust:none;
+    font-family:helvetica;
+}
+
+header {
+    position:absolute;
+    z-index:2;
+    top:0;
+    left:0;
+    width:100%;
+    height:50px;
+    line-height:50px;
+    background:#ed9249;
+    padding:0 5px;
+    color:#eee;
+    font-size:20px;
+    text-align:center;
+    display: -webkit-box;
+    -webkit-box-sizing: border-box;
+    -webkit-box-pack: justify;
+
+}
+
+header a {
+    display: -webkit-box;
+    color:#f3f3f3;
+    text-decoration:none;
+    font-weight:bold;
+
+}
+
+header a:first-child {
+    width: 50px;
+    height: 50px;
+    font-size:16px;
+}
+
+.like_btn{
+    display: block;
+    width: 1px;
+    height: 50px;
+    background: -webkit-linear-gradient(top, #eb8f45, #e38334);
+    margin-left: 25px;
+}
+
+header a:last-child {
+    width: 50px;
+    height: 50px;
+    font-size:16px;
+
+}
+
+
+#wrapper {
+    position:absolute; z-index:1;
+    bottom:10px;
+    top: 57px;
+    left:0;
+    width:100%;
+    overflow:auto;
+}
+
+
+#scroller li {
+    display: -webkit-box;
+    height: 85px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+#scroller li:nth-child(odd){
+    background:#f8f8f8;
+    eaeaea
+}
+
+#scroller li:nth-child(even){
+    background:#eaeaea;
+
+}
+
+#scroller li p{
+
+    -webkit-box-flex: 1;
+    display: -webkit-box;
+    position: absolute;
+    top: 13px;
+    left: 20px;
+    color: #5a5a5a;
+    font-size: 18px;
+}
+
+#scroller li span{
+    /*display: inline;
+    display: -webkit-box;
+    padding: 5px 10px;*/
+    display: -webkit-box;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+}
+
+
+

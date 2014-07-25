@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>个人中心</title>
+    <link rel="stylesheet" href="../css/grzx.css">
+</head>
+<body>
+<header>
+    <a href="javascript:void (0);" onClick="javascript :history.back(-1);">
+        <img src="../images/2sf_1.png"  width="50%" style="padding: 15px  0  0 15px;">
+        <span class="like_btn"></span>
+    </a>
+    <a href="javascript:void (0);">个人中心</a>
+    <a href="#"></a>
+</header>
+
+<div id="wrapper">
+    <div id="scroller">
+        <ul id="thelist">
+            <li>
+                <p>我的幸福优号码</p>
+                <span><img src="../images/pg1.png"/></span>
+            </li>
+            <li>
+                <p>我的消息中心</p>
+                <span><img src="../images/pg1.png"/></span>
+            </li>
+            <li>
+                <p>我的收藏</p>
+                <span><img src="../images/pg1.png"/></span>
+            </li>
+            <li>
+                <p>我的评估</p>
+                <span><img src="../images/pg1.png"/></span>
+            </li>
+            <li>
+                <p>我的看房班车</p>
+                <span><img src="../images/pg1.png"/></span>
+            </li>
+            <li>
+                <p>设置</p>
+                <span><img src="../images/pg1.png"/></span>
+            </li>
+            <li>
+                <p>版本更新</p>
+                <span><img src="../images/pg1.png"/></span>
+            </li>
+            <li>
+                <p>关于我们</p>
+                <span><img src="../images/pg1.png"/></span>
+            </li>
+            <li>
+                <p>我的幸福优号码</p>
+                <span><img src="../images/pg1.png"/></span>
+            </li>
+            <li>
+                <p>我的幸福优号码</p>
+                <span><img src="../images/pg1.png"/></span>
+            </li>
+
+
+
+        </ul>
+    </div>
+
+</div>
+
+<script src="../js/zepto.min.js"></script>
+<script src="../js/iscroll.js"></script>
+<script type="text/javascript">
+    window.onload = function () {
+        new iScroll('wrapper', {
+            onBeforeScrollStart: function () {
+            },
+            fadeScrollbar: true,
+            hideScrollbar: true
+        });
+
+    }
+</script>
+
+</body>
+</html>

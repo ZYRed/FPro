@@ -1,0 +1,189 @@
+body,ul,li,p{
+    padding:0;
+    margin:0;
+    border:0;
+}
+
+body {
+    font-size:12px;
+    -webkit-user-select:none;
+    -webkit-text-size-adjust:none;
+    font-family:helvetica;
+    background-color: #f8f8f8;
+    overflow: hidden;
+    overflow-x: hidden;
+}
+
+header {
+    position:absolute;
+    z-index:4;
+    top:0;
+    left:0;
+    width:100%;
+    height:50px;
+    line-height:50px;
+    background:#ed9249;
+    padding:0 5px;
+    color:#eee;
+    font-size:20px;
+    text-align:center;
+    display: -webkit-box;
+    -webkit-box-sizing: border-box;
+    -webkit-box-pack: justify;
+    position: fixed;
+
+}
+
+header a {
+    display: -webkit-box;
+    color:#f3f3f3;
+    text-decoration:none;
+    font-weight:bold;
+
+}
+
+header a:first-child {
+    width: 50px;
+    height: 50px;
+}
+
+.like_btn{
+    display: block;
+    width: 1px;
+    height: 50px;
+    background: -webkit-linear-gradient(top, #eb8f45, #e38334);
+    margin-left: 25px;
+}
+
+header a:last-child {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    display: -webkit-box;
+    -webkit-box-orient:horizontal;
+    display: -moz-box;
+    -moz-box-orient:horizontal;
+    overflow: hidden;
+
+}
+
+header a:last-child p{
+    width: 20px;
+    height: 30px;
+    margin-top: 2px;
+    padding: 13px 15px 7px 15px;
+    border-left:1px solid #e38334 ;
+}
+
+header a:last-child img{
+    width: 99%;
+    display: block;
+}
+
+article{
+    position: absolute;z-index: 1;
+    width: 100%;
+    text-align: center;
+}
+article img{
+margin-top: 50%;
+}
+
+
+#wrapper {
+    position:absolute; z-index:5;
+    bottom:0.8em;
+    left:0;
+    width:100%;
+    height: 100%;
+    overflow:auto;
+
+}
+
+
+#scroller li {
+    display: -webkit-box;
+    height: 5.5em;
+    background:#f8f8f8;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    font-size: 14px;
+}
+#scroller li:nth-child(1){
+   background: none;
+    background-image: url("../images/yao2.png");
+    background-repeat: no-repeat;
+    background-origin:content-box;
+    background-position: center bottom;
+    background-size: 6.8em;
+    height: 4.3em;
+}
+
+
+
+#scroller li img{
+    display: -webkit-box;
+    padding: 5px 10px;
+    width:50px ;
+
+}
+#scroller li p{
+    position: absolute;
+    left: 70px;
+    color: #5a5a5a;
+    font-size: 18px;
+    overflow: hidden;
+
+}
+#scroller li p:nth-child(2){
+    font-size: 14px;
+    top:7%
+}
+
+#scroller li p:nth-child(3){
+    top: 35%;
+    font-size: 12px;
+}
+#scroller li p:nth-child(4){
+    font-size: 12px;
+    top: 63%;
+    background-image: url("../images/jinji-6.png");
+    background-repeat: no-repeat;
+    background-size: 14px;
+    padding-left: 25px;
+    height: 40px;
+}
+
+
+#scroller li span{
+    width: 13px;
+    height: 20px;
+    background-image: url("../images/pg1.png");
+    background-size: 60%;
+    background-repeat: no-repeat;
+    display: -webkit-box;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+}
+
+footer{
+    background-color: #ed9249;
+    position: absolute;z-index: 6;
+    bottom: 0;
+    left: 0;
+    height: 5%;
+    width: 100%;
+    position: fixed;
+}
+
+
+
+
+
+
+
+
+
+
+

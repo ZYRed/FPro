@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>选择城市</title>
+    <link rel="stylesheet" href="../css/choosecity.css">
+</head>
+<body>
+<header>
+    <a href="zixun.html">
+        <img src="../images/2sf_1.png" width="50%" style="padding: 15px  0  0 10px;">
+        <span class="like_btn"></span>
+    </a>
+    <a href="javascript:void (0);">选择城市</a>
+    <a href="javascript:void (0);"></a>
+</header>
+
+
+<section>
+    <input type="text" class="search" placeholder="搜素城市 中文/拼音/首字母"/>
+</section>
+
+
+<article>
+    <p>当前城市</p>
+    <p>北京</p>
+    <p>更多城市</p>
+</article>
+
+<div id="wrapper">
+    <div id="scroller">
+        <ul id="thelist">
+            <li>天津</li>
+            <li>上海</li>
+            <li>武汉</li>
+            <li>石家庄</li>
+            <li>青岛</li>
+            <li>哈尔滨</li>
+            <li>长春</li>
+            <li>太原</li>
+            <li>郑州</li>
+            <li>石家庄</li>
+            <li>青岛</li>
+            <li>哈尔滨</li>
+            <li>长春</li>
+            <li>太原</li>
+            <li>郑州</li>
+            <li>石家庄</li>
+            <li>青岛</li>
+            <li>哈尔滨</li>
+            <li>长春</li>
+            <li>太原</li>
+   </div>
+</div>
+
+<div class="list">
+    <ul>
+        <li>#</li>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+        <li>D</li>
+        <li>E</li>
+        <li>F</li>
+        <li>G</li>
+        <li>H</li>
+        <li>I</li>
+        <li>J</li>
+        <li>K</li>
+        <li>L</li>
+        <li>M</li>
+        <li>N</li>
+        <li>O</li>
+        <li>P</li>
+        <li>Q</li>
+        <li>R</li>
+        <li>S</li>
+        <li>T</li>
+        <li>U</li>
+        <li>V</li>
+        <li>X</li>
+        <li>Y</li>
+        <li>Z</li>
+
+    </ul>
+</div>
+
+<script src="../js/zepto.min.js"></script>
+<script src="../js/iscroll.js"></script>
+<script type="text/javascript">
+    window.onload = function () {
+        new iScroll('wrapper', {
+            onBeforeScrollStart: function () {
+            },
+            fadeScrollbar: true,
+            hideScrollbar: true
+        });
+
+
+    }
+</script>
+</body>
+</html>

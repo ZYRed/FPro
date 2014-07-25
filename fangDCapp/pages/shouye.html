@@ -1,0 +1,62 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>首页</title>
+    <link rel="stylesheet" href="../css/shouye.css">
+</head>
+<body>
+<div id="header">
+    <a href="javascript:void(0);">北京</a>
+    <input type="text"><label><img src="../images/shouy.png"/></label>
+</div>
+<div id="wrapper">
+    <div id="scroller">
+        <ul>
+            <li class="pinggu" onclick="window.location.href='pinggu.html'">房价评估</li>
+            <li class="xinpan" onclick="window.location.href='pinggu.html'">新盘</li>
+            <li class="ershou" onclick="window.location.href='2shoufang.html'">二手房</li>
+        </ul>
+        <ul>
+            <li class="kanfang" onclick="window.location.href='kanfang.html'">看房团</li>
+            <li class="shijing" onclick="window.location.href='kanfang.html'">实景看房</li>
+            <li class="youhui" onclick="window.location.href='youhui.html'">优惠</li>
+        </ul>
+        <ul>
+            <li class="zixun" onclick="window.location.href='zixun.html'">房价咨询</li>
+            <li class="zufang" onclick="window.location.href='zufang.html'">租房</li>
+            <li class="man" onclick="window.location.href='yao-yao.html'">经纪人</li>
+        </ul>
+    </div>
+</div>
+
+<div id="footer">
+    <ul>
+        <li onclick="window.location.href='grzx.html'">个人中心</li>
+        <li></li>
+        <li></li>
+        <li>云相机</li>
+    </ul>
+</div>
+<script src="js/iscroll.js"></script>
+<script type="text/javascript">
+    window.onload = function () {
+        new iScroll('wrapper', {
+            onBeforeScrollStart: function () {
+            },
+            /*fadeScrollbar: true,
+             hideScrollbar: true*/
+            /*hideScrollbar: true,
+             momentum: false*/
+            /*bounceLock: false*/
+            hScrollbar: false,
+            /*vScrollbar: true,
+             bounce: false*/
+        });
+    }
+</script>
+</body>
+
+</html>

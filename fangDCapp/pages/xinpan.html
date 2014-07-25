@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>新盘</title>
+    <link rel="stylesheet" href="../css/xinpan.css">
+</head>
+<body>
+<header>
+    <a href="javascript:void (0);" onClick="javascript :history.back(-1);">
+        <img src="../images/2sf_1.png" width="50%" style="padding: 15px  0  0 10px;">
+        <span class="like_btn"></span>
+    </a>
+    <a href="javascript:void (0);">　　新盘</a>
+    <a href="javascript:void (0);"><p><img src="../images/2sf_2.png" id="grzx"></p><p id="search"><img src="../images/2sf_3.png"></p></a>
+</header>
+<nav>
+    <ul class="list">
+        <li>区域</li>
+        <li>价格</li>
+        <li>方式</li>
+        <li>来源</li>
+        <li>排序</li>
+    </ul>
+</nav>
+
+<div id="wrapper">
+    <div id="scroller">
+        <ul id="thelist">
+            <li>
+                <img src="../images/xinpan_03.png">
+                <h1>珠江东都国际</h1>
+                <h2>通州　<span>起价19800元…</span></h2>
+                <h3 >通州区京通高速耿庄出口向北500米xpxpx</h3>
+                <span class="biaoqian"> 预存2万优惠4万</span>
+            </li>
+            <li>
+                <img src="../images/xinpan_11.png">
+                <h1>紫玉华府</h1>
+                <h2>朝阳　<span>起价75800元…</span></h2>
+                <h3>3室1厅 110平米</h3>
+                <span class="biaoqian">预存10万优惠30万</span>
+            </li>
+            <li>
+                <img src="../images/xinpan_13.png">
+                <h1>润枫领尚</h1>
+                <h2>通州　<span style="color: #31cec8">待定</span></h2>
+                <h3 style="text-overflow :ellipsis; ">东南五环光机电产业基地和中心区地铁站pxpxpx</h3>
+            </li>
+            <li>
+                <img src="../images/xinpan_15.png">
+                <h1>熙悦春天smart空间</h1>
+                <h2>大兴　　<span style="color: #31cec8">待定</span></h2>
+                <h3 style="text-overflow :ellipsis; ">大兴地铁4号线首站天宫院地铁站地铁站pxpxpx</h3>
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+<script src="../js/zepto.min.js"></script>
+<script src="../js/iscroll.js"></script>
+<script type="text/javascript">
+    window.onload = function () {
+        new iScroll('wrapper', {
+            onBeforeScrollStart: function () {
+            },
+            fadeScrollbar: true,
+            hideScrollbar: true
+        });
+
+    }
+</script>
+<script type="text/javascript">
+    var search = document.getElementById("search");
+        search.onclick = function(){
+            window.location.href="search-xin.html";
+        }
+
+</script>
+<script type="text/javascript">
+    var grzx = document.getElementById("grzx");
+        grzx.onclick = function(){
+            window.location.href="grzx.html";
+        }
+
+</script>
+</body>
+</html>

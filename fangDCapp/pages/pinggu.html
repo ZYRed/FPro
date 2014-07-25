@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>房价评估</title>
+    <link rel="stylesheet" href="../css/pinggu.css">
+</head>
+<body>
+<div id="box">
+    <div class="all"></div>
+    <div class="tuzi"><img src="../images/pg05.png"></div>
+</div>
+<header>
+    <a href="login.html">
+        <img src="../images/2sf_1.png" width="50%" style="padding: 15px  0  0 10px;">
+        <span class="like_btn"></span>
+    </a>
+    <a href="zixun.html">房价评估</a>
+    <a href="javascript:void (0);"><p id = "pages"><img src="../images/2sf_2.png"></p></a>
+</header>
+<nav>
+    <ul class="list">
+        <li><a href="xinpan.html">全部楼盘</a></li>
+        <li><a href="2shoufang.html">全部区域</a></li>
+        <li><a href="youhui.html">全部价格</a></li>
+        <li><a href="zufang.html">默认排序</a></li>
+    </ul>
+</nav>
+
+<section>
+    <button class="address">北京</button>
+    <input type="text" class="search" placeholder="输入城市名称"/>
+    <button class="guyi">估一下</button>
+</section>
+
+<aside>
+    <div id="lists">
+        <ul>
+            <li>朝阳区</li>
+            <li>海淀区</li>
+        </ul>
+        <ul>
+            <li>丰台区</li>
+            <li>昌平区</li>
+        </ul>
+        <ul>
+            <li>大兴区</li>
+            <li>怀柔区</li>
+        </ul>
+
+    </div>
+</aside>
+
+<div id="wrapper">
+    <div id="scroller">
+        <ul id="thelist">
+            <li>
+                <img src="../images/pg_01.png">
+                <h1>万源城四期</h1>
+                <h2>已开盘</h2>
+                <h3>指导均价：44212元/平</h3>
+                <span>实际售价：40000元/月</span>
+            </li>
+            <li>
+                <img src="../images/pg_02.png">
+                <h1>远洋悦亭</h1>
+                <h2>已开盘</h2>
+                <h3>指导均价：22465元/平</h3>
+                <span>实际售价：21000元/月</span>
+            </li>
+            <li>
+                <img src="../images/pg_03.png">
+                <h1>中环名品公馆</h1>
+                <h2>已开盘</h2>
+                <h3>指导均价：44209元/平</h3>
+                <span>实际售价：40040元/月</span>
+            </li>
+            <li>
+                <img src="../images/pg_02.png">
+                <h1>远洋悦亭</h1>
+                <h2>已开盘</h2>
+                <h3>指导均价：22465元/平</h3>
+                <span>实际售价：21000元/月</span>
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+
+
+<script src="../js/zepto.min.js"></script>
+<script src="../js/iscroll.js"></script>
+<script type="text/javascript">
+    window.onload = function () {
+        new iScroll('wrapper', {
+            onBeforeScrollStart: function () {
+            },
+            fadeScrollbar: true,
+            hideScrollbar: true
+        });
+
+        var box = document.getElementById('box');
+            box.onclick = function(){
+               this.setAttribute("hidden", "ture")
+            }
+
+    }
+</script>
+    
+<script type="text/javascript">
+    var pages = document.getElementById("pages");
+        pages.onclick = function(){
+            window.location.href="grzx.html";
+        }
+
+</script>
+</body>
+</html>
